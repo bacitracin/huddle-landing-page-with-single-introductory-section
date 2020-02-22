@@ -1,79 +1,103 @@
-$breakpoint-mobile: 375px;
+$breakpoint-mobile: 376px;
+$purple: hsl(257, 40%, 49%);
 
 body {
-  background: hsl(257, 40%, 49%) url("images/bg-desktop.svg") no-repeat center
-    center/cover;
+  background: url('../images/bg-mobile.svg') $purple no-repeat;
+  background-size: auto;
   color: white;
   font-family: "Open Sans";
-  margin: 35px;
-}
+  margin: 50px;
 
-.logo {
-  width: 40%;
-}
+  @media (min-width: $breakpoint-mobile) {
+    background: url('../images/bg-desktop.svg') $purple no-repeat;
+    height: 100%;
+  }
 
-.container {
+  .container {
 
-  .main-image {
-    margin: 40px 0px;
+    @media (min-width: $breakpoint-mobile) {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 100%;
+      margin: 30px 0px 0px;
+    }
 
-    img {
-      height: auto;
-      margin: auto;
-      width: 100%;
+    .main-image {
+      margin: 50px 0px;
+
+      img {
+        height: auto;
+        margin: auto;
+        width: 100%;
+      }
+    }
+
+    .content {
+      text-align: center;
+
+      @media (min-width: $breakpoint-mobile) {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        padding: 40px 0px 0px 40px;
+        text-align: left;
+      }
+
+      button {
+        background-color: white;
+        border-radius: 30px;
+        color: $purple;
+        font-size: 14px;
+        padding: 15px;
+        margin: 30px 0px 40px;
+        width: 75%;
+
+        @media (min-width: $breakpoint-mobile) {
+          width: 40%;
+        }
+      }
+
+      .header {
+        font-family: Poppins;
+        font-size: 26px;
+        margin: 50px 0px 20px;
+
+        @media (min-width: $breakpoint-mobile) {
+          font-size: 40px;
+          margin-right: 40px;
+        }
+      }
     }
   }
 
-  .content {
-    text-align: center;
+  .logo {
+    width: 50%;
 
-    button {
-      background-color: white;
-      border-radius: 20px;
-      color: hsl(257, 40%, 49%);
-      padding: 15px;
-      margin: 30px 0px 40px;
-      width: 80%;
-    }
-
-    .header {
-      font-family: Poppins;
-      font-size: 26px;
+    @media (min-width: $breakpoint-mobile) {
+      width: 16%;
     }
   }
 
-  // display: grid;
-  // grid-template-columns: 60% 40%;
-  // grid-template-rows: 10% 80% 10%;
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 
-  // @media (max-width: $breakpoint-mobile) {
-  //   .background-image {
-  //     display: none;
-  //   }
-  //   .background-image--mobile {
-  //     position: absolute;
-  //     height: 100%;
-  //     width: 100%;
-  //     z-index: 0;
-  //   }
-  // }
+    @media (min-width: $breakpoint-mobile) {
+      justify-content: flex-end;
+    }
 
-  // .background-image {
-  //   position: absolute;
-  //   height: 100%;
-  //   width: 100%;
-  //   z-index: 0;
-  // }
-
-  // .background-image--mobile {
-  //   display: none;
-  // }
-
-  // .content {
-  //   z-index: 2;
-  // }
-
-  // .main-image {
-  //   z-index: 1;
-  // }
+    .fab {
+      align-items: center;
+      border: 1px white solid;
+      border-radius: 50%;
+      display: flex;
+      height: 30px;
+      justify-content: center;
+      margin-right: 15px;
+      width: 30px;
+    }
+  }
 }

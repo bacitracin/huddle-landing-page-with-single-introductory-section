@@ -1,29 +1,75 @@
 body {
-  background: #674baf url("images/bg-desktop.svg") no-repeat center center/cover;
+  background: url("../images/bg-mobile.svg") #674baf no-repeat;
+  background-size: auto;
   color: white;
   font-family: "Open Sans";
-  margin: 35px; }
-
-.logo {
-  width: 40%; }
-
-.container .main-image {
-  margin: 40px 0px; }
-  .container .main-image img {
-    height: auto;
-    margin: auto;
-    width: 100%; }
-.container .content {
-  text-align: center; }
-  .container .content button {
-    background-color: white;
-    border-radius: 20px;
-    color: #674baf;
-    padding: 15px;
-    margin: 30px 0px 40px;
-    width: 80%; }
-  .container .content .header {
-    font-family: Poppins;
-    font-size: 26px; }
+  margin: 50px; }
+  @media (min-width: 376px) {
+    body {
+      background: url("../images/bg-desktop.svg") #674baf no-repeat;
+      height: 100%; } }
+  @media (min-width: 376px) {
+    body .container {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 100%;
+      margin: 30px 0px 0px; } }
+  body .container .main-image {
+    margin: 50px 0px; }
+    body .container .main-image img {
+      height: auto;
+      margin: auto;
+      width: 100%; }
+  body .container .content {
+    text-align: center; }
+    @media (min-width: 376px) {
+      body .container .content {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        padding: 40px 0px 0px 40px;
+        text-align: left; } }
+    body .container .content button {
+      background-color: white;
+      border-radius: 30px;
+      color: #674baf;
+      font-size: 14px;
+      padding: 15px;
+      margin: 30px 0px 40px;
+      width: 75%; }
+      @media (min-width: 376px) {
+        body .container .content button {
+          width: 40%; } }
+    body .container .content .header {
+      font-family: Poppins;
+      font-size: 26px;
+      margin: 50px 0px 20px; }
+      @media (min-width: 376px) {
+        body .container .content .header {
+          font-size: 40px;
+          margin-right: 40px; } }
+  body .logo {
+    width: 50%; }
+    @media (min-width: 376px) {
+      body .logo {
+        width: 16%; } }
+  body .social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; }
+    @media (min-width: 376px) {
+      body .social {
+        justify-content: flex-end; } }
+    body .social .fab {
+      align-items: center;
+      border: 1px white solid;
+      border-radius: 50%;
+      display: flex;
+      height: 30px;
+      justify-content: center;
+      margin-right: 15px;
+      width: 30px; }
 
 /*# sourceMappingURL=index.css.map */
