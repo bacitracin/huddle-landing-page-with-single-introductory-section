@@ -1,0 +1,79 @@
+$breakpoint-mobile: 375px;
+
+body {
+  background: hsl(257, 40%, 49%) url("images/bg-desktop.svg") no-repeat center
+    center/cover;
+  color: white;
+  font-family: "Open Sans";
+  margin: 35px;
+}
+
+.logo {
+  width: 40%;
+}
+
+.container {
+
+  .main-image {
+    margin: 40px 0px;
+
+    img {
+      height: auto;
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+  .content {
+    text-align: center;
+
+    button {
+      background-color: white;
+      border-radius: 20px;
+      color: hsl(257, 40%, 49%);
+      padding: 15px;
+      margin: 30px 0px 40px;
+      width: 80%;
+    }
+
+    .header {
+      font-family: Poppins;
+      font-size: 26px;
+    }
+  }
+
+  // display: grid;
+  // grid-template-columns: 60% 40%;
+  // grid-template-rows: 10% 80% 10%;
+
+  // @media (max-width: $breakpoint-mobile) {
+  //   .background-image {
+  //     display: none;
+  //   }
+  //   .background-image--mobile {
+  //     position: absolute;
+  //     height: 100%;
+  //     width: 100%;
+  //     z-index: 0;
+  //   }
+  // }
+
+  // .background-image {
+  //   position: absolute;
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: 0;
+  // }
+
+  // .background-image--mobile {
+  //   display: none;
+  // }
+
+  // .content {
+  //   z-index: 2;
+  // }
+
+  // .main-image {
+  //   z-index: 1;
+  // }
+}

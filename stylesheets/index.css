@@ -1,0 +1,29 @@
+body {
+  background: #674baf url("images/bg-desktop.svg") no-repeat center center/cover;
+  color: white;
+  font-family: "Open Sans";
+  margin: 35px; }
+
+.logo {
+  width: 40%; }
+
+.container .main-image {
+  margin: 40px 0px; }
+  .container .main-image img {
+    height: auto;
+    margin: auto;
+    width: 100%; }
+.container .content {
+  text-align: center; }
+  .container .content button {
+    background-color: white;
+    border-radius: 20px;
+    color: #674baf;
+    padding: 15px;
+    margin: 30px 0px 40px;
+    width: 80%; }
+  .container .content .header {
+    font-family: Poppins;
+    font-size: 26px; }
+
+/*# sourceMappingURL=index.css.map */
