@@ -4,11 +4,11 @@ body {
   color: white;
   font-family: "Open Sans";
   margin: 50px; }
-  @media (min-width: 376px) {
+  @media (min-width: 768px) {
     body {
       background: url("../images/bg-desktop.svg") #674baf no-repeat;
       height: 100%; } }
-  @media (min-width: 376px) {
+  @media (min-width: 768px) {
     body .container {
       display: grid;
       grid-template-columns: 60% 40%;
@@ -22,7 +22,7 @@ body {
       width: 100%; }
   body .container .content {
     text-align: center; }
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
       body .container .content {
         display: flex;
         flex-direction: column;
@@ -39,27 +39,27 @@ body {
       padding: 15px;
       margin: 30px 0px 40px;
       width: 75%; }
-      @media (min-width: 376px) {
+      @media (min-width: 768px) {
         body .container .content button {
           width: 40%; } }
     body .container .content .header {
       font-family: Poppins;
       font-size: 26px;
       margin: 50px 0px 20px; }
-      @media (min-width: 376px) {
+      @media (min-width: 768px) {
         body .container .content .header {
           font-size: 40px;
           margin-right: 40px; } }
   body .logo {
-    width: 50%; }
-    @media (min-width: 376px) {
+    width: 40%; }
+    @media (min-width: 768px) {
       body .logo {
         width: 16%; } }
   body .social {
     display: flex;
     justify-content: center;
     margin-bottom: 40px; }
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
       body .social {
         justify-content: flex-end; } }
     body .social .fab {
